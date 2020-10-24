@@ -18,6 +18,8 @@ public class GeniusApplication {
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);
         //我是帅哥
+
+        //sdfsdf
     }
 
 
