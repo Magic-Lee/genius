@@ -21,6 +21,9 @@ public class GeniusApplication {
 
         //sdfsdf
     }
+    public static void testCommit(){
+
+    }
 
 
 
