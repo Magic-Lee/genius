@@ -17,6 +17,7 @@ public class GeniusApplication {
         SpringApplication springApplication=new SpringApplication(GeniusApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.run(args);
+        //我是帅哥
     }
 
 
