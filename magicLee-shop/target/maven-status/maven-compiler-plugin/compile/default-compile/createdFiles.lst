@@ -1,0 +1,5 @@
+cn\genius\study\entity\Test.class
+cn\genius\study\controller\TestController.class
+cn\genius\study\service\TestService.class
+cn\genius\study\service\impl\TestServiceImpl.class
+cn\genius\study\mapper\TestMapper.class
