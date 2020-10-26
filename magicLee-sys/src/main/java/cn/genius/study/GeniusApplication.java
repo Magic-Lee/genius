@@ -8,13 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "cn.genius.study")
 @MapperScan("cn.genius.study.mapper")
 public class GeniusApplication {
-
     public static void main(String[] args) {
         SpringApplication springApplication=new SpringApplication(GeniusApplication.class);
-        springApplication.setBannerMode(Banner.Mode.OFF);
+        springApplication.setBannerMode(Banner.Mode.CONSOLE);
         springApplication.run(args);
     }
-
-
-
 }

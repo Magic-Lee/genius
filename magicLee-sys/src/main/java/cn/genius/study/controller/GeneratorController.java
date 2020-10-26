@@ -18,6 +18,7 @@ public class GeneratorController {
         try {
             Long time = System.currentTimeMillis();
             MysqlGeneratorUtil.mybatisGenerator(vo);
+            System.out.println("create() 共计耗时:"+(System.currentTimeMillis()-time)+"ms");
             return Result.ok("生成成功");
         } catch (Exception e) {
             e.printStackTrace();

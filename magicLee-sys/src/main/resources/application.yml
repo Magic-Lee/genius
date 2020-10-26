@@ -2,4 +2,4 @@ server:
   port: 8089
 spring:
   profiles:
-    active: test
+    active: workpc
