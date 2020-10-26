@@ -12,7 +12,7 @@ public class GeniusApplication {
     public static void main(String[] args) {
         SpringApplication springApplication=new SpringApplication(GeniusApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
-        springApplication.run(args);//xx
+        springApplication.run(args);
     }
 
 
