@@ -53,8 +53,8 @@ public class MysqlGeneratorUtil {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperControllerClass(GeneratorBean.getSupperController());
-        strategy.setSuperEntityClass(GeneratorBean.getSupperEntity());
+        //strategy.setSuperControllerClass(GeneratorBean.getSupperController());
+        //strategy.setSuperEntityClass(GeneratorBean.getSupperEntity());
         strategy.setEntityLombokModel(GeneratorBean.getEnableLombok());
         strategy.setInclude(vo.getTableNames());  // 如果要生成多个,这里可以传入String[]
         strategy.setRestControllerStyle(true);

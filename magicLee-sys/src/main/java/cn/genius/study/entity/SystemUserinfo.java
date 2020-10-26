@@ -1,6 +1,5 @@
 package cn.genius.study.entity;
 
-import cn.genius.study.model.BaseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -18,7 +17,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-public class SystemUserinfo extends BaseEntity {
+public class SystemUserinfo {
 
     private static final long serialVersionUID=1L;
 

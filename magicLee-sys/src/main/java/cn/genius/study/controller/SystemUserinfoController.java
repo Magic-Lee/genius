@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 @Slf4j
 @RestController
 @RequestMapping("/systemUserinfo")
-public class SystemUserinfoController extends BaseController {
+public class SystemUserinfoController {
     @Resource
     private SystemUserinfoService systemUserinfoService;
 

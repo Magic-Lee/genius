@@ -7,17 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource(value = {"mybatis/mybatis-generator.properties"})
 public class GeneratorBean {
-    
-    private static String packageName;
+
     private static String author;
     private static String parentPackageName;
     private static String supperController;
     private static String supperEntity;
     private static Boolean enableLombok;
 
-    public static String getPackageName() {
-        return packageName;
-    }
 
     public static String getAuthor() {
         return author;
@@ -39,10 +35,6 @@ public class GeneratorBean {
         return enableLombok;
     }
 
-    @Value("${mybatis.generator.packageName}")
-    public void setPackageName(String packageName) {
-        GeneratorBean.packageName = packageName;
-    }
     @Value("${mybatis.generator.author}")
     public void setAuthor(String author) {
         GeneratorBean.author = author;
@@ -60,7 +52,5 @@ public class GeneratorBean {
         GeneratorBean.supperEntity = supperEntity;
     }
     @Value("${mybatis.generator.enableLombok}")
-    public void setEnableLombok(String enableLombok) {
-        GeneratorBean.enableLombok = Boolean.parseBoolean(enableLombok) ;
-    }
+    public void setEnableLombok(String enableLombok) {GeneratorBean.enableLombok = Boolean.parseBoolean(enableLombok) ; }
 }
