@@ -1,4 +1,5 @@
 spring:
+  #alibaba datasource
   datasource:
     name:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -6,6 +7,17 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  #activemq config
+  activemq:
+    broker-url: tcp://localhost:61616
+    #true 表示使用内置的MQ，false则连接服务器
+    in-memory: false
+    pool:
+      #true表示使用连接池；false时，每发送一条数据创建一个连接
+      enabled: true
+      max-connections: 10
+      idle-timeout: 30000
+
 
 #Mybatis plus配置
 mybatis-plus:

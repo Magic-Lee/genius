@@ -15,7 +15,6 @@ import lombok.experimental.Accessors;
  * @since 2020-10-22
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 public class SystemUserinfo {
 
